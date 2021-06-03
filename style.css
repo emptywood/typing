@@ -1,0 +1,51 @@
+#main {
+  text-align:center;
+}
+#content {
+  border:2px solid black;
+  border-radius:10px;
+  width:400px;
+  margin:0 auto;
+}
+#yomi {
+  top:40px;
+  position:relative;
+}
+#mondai {
+  display:flex;
+  justify-content:center; /* 子要素をflexboxにより中央に配置する */
+  font-size:2.4rem;
+}
+.text {
+  padding:2px;
+}
+.text.default {
+  color:#f3f3f3;
+  text-shadow:1px 1px 0 #000,
+              -1px 1px 0 #000,
+              1px -1px 0 #000,
+              -1px -1px 0 #000;
+}
+text.correct {
+  color:black;
+  text-shadow:none;/*ボーダーをなかったことにする*/
+}
+#start-button {
+  font-size:1.0rem;
+  font-weight:bold;
+  padding:10px 30px;
+  background-color:#248;
+  color:#fff;
+  border-style:none;
+  cursor:pointer;
+}
+#finish-panel {
+  text-align:center;
+  margin-bottom:30px;
+}
+.hidden {
+  display:none;
+}
+#tool {
+  padding-top:16px;
+}

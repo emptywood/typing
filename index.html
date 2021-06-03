@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../jquery-3.6.0.min.js"></script>
+  <title>タイピング</title>
+</head>
+<body>
+  <div id="main">
+    <div><h2>タイピングゲーム</h2></div>
+    <div id="content">
+      <p id="start-message">「スペースキー」を押すとスタートします</p>
+      <p id="yomi">よみ</p>
+      <div id="mondai">
+        <p id="char-1" class="text default">a</p>
+        <p id="char-2" class="text default">b</p>
+        <p id="char-3" class="text default">c</p>
+      </div>
+      <div id="finish-panel" class="hidden">
+        <p>終了しました</p>
+        <p id="correct-message"></p>
+        <p id="mistake-message"></p>
+        <p id="time-message"></p>
+        <button id="start-button">やりなおす</button>
+      </div>
+    </div>
+    <div id="tool">
+      <select id="count-select">
+        <option value="3">出題数:3問</option>
+        <option value="5">出題数:5問</option>
+        <option value="10">出題数:10問</option>
+      </select>
+    </div>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
